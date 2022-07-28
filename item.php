@@ -22,6 +22,14 @@ $img = "imgs/ps5.jpg";
         <p> price of product <?="${prix} €" ?></p>
     </div>
 
+<div>
+    <h5>  Product Name: <?=  $name?></h5>
+    <img src="<?= $img ?>" width="250px" height="250px">
+    <p> price of product <?="${prix} €" ?></p>
+</div>
+
+
+
 <?php require "footer.php" ?>
 </body>
 </html>
