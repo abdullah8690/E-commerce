@@ -12,11 +12,13 @@ $img = "imgs/ps5.jpg";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+
 </head>
 
 <body>
 <?php require_once "navbar.php" ?>
-    <div>
+
+    <div class="d-inline">
         <h5>  Product Name: <?=  $name?></h5>
         <img src="<?= $img ?>" width="250px" height="250px">
         <p> price of product <?="${prix} €" ?></p>
@@ -27,6 +29,8 @@ $img = "imgs/ps5.jpg";
     <img src="<?= $img ?>" width="250px" height="250px">
     <p> price of product <?="${prix} €" ?></p>
 </div>
+
+
 
 
 
