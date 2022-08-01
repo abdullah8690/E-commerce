@@ -1,88 +1,98 @@
 <?php
+require_once "my-functions.php";
 $products =[
     "iphone" =>[
-    "Name" => "iphone",
-    "price" => 1200,
-    "weight" => 200,
-    "picture" =>"imgs/2017.png"
-    ],
-
-"imac" =>[
-    "Name" => "imac",
-    "price" => 2200,
-    "weight" => 1200,
-    "picture" =>"imgs/imac_16-9.png"
-    ],
-
-"ipad" =>[
-    "Name" => "ipad",
-    "price" => 1800,
-    "weight" => 500,
-    "picture" =>"imgs/ipad2.png"
-    ],
-    "playstation "=>[
-    "Name" => "ps 5",
-    "price" => 899,
-    "weight" => 4000,
-    "picture" => "imgs/ps5.jpg"
-    ],
-
-    "iphone2" =>[
-    "Name" => "iphone",
-    "price" => 1200,
-    "weight" => 200,
-    "picture" =>"imgs/2017.png"
-    ],
-
-"imac2" =>[
-    "Name" => "imac",
-    "price" => 2200,
-    "weight" => 1200,
-    "picture" =>"imgs/imac_16-9.png"
-    ],
-
-"ipad2" =>[
-    "Name" => "ipad",
-    "price" => 1800,
-    "weight" => 500,
-    "picture" =>"imgs/ipad2.png"
-    ],
-    "playstation2 "=>[
-    "Name" => "ps 5",
-    "price" => 899,
-    "weight" => 4000,
-    "picture" => "imgs/ps5.jpg"
-    ],
-
-    "iphone3" =>[
-        "Name" => "iphone",
-        "price" => 1200,
+        "name" => "iphone",
+        "price" => 12000,
         "weight" => 200,
+        "discount" => 30,
         "picture" =>"imgs/2017.png"
     ],
 
-    "imac3" =>[
-        "Name" => "imac",
+    "imac" =>[
+        "name" => "imac",
         "price" => 2200,
+        "discount" => 30,
         "weight" => 1200,
         "picture" =>"imgs/imac_16-9.png"
     ],
 
-    "ipad3" =>[
-        "Name" => "ipad",
+    "ipad" =>[
+        "name" => "ipad",
         "price" => 1800,
+        "discount" => 30,
         "weight" => 500,
         "picture" =>"imgs/ipad2.png"
     ],
-    "playstation3 "=>[
-        "Name" => "ps 5",
+    "playstation "=>[
+        "name" => "ps 5",
         "price" => 899,
+        "discount" => 30,
         "weight" => 4000,
         "picture" => "imgs/ps5.jpg"
-    ]
+    ],
+
+    "iphone2" =>[
+        "name" => "iphone X Pro",
+        "price" => 900,
+        "discount" => 30,
+        "weight" => 200,
+        "picture" =>"https://image.made-in-china.com/155f0j00pWKRACMafbov/Original-Unlocked-A-Grade-High-Quality-Smart-Phone-New-Used-Smart-Phone-64GB-128GB-256GB-for-iPhone-X-iPhone-Xs-Xr-PRO-11.jpg"
+    ],
+
+    "imac2" =>[
+        "name" => "imac Pro",
+        "price" => 2200,
+        "discount" => 30,
+        "weight" => 1200,
+        "picture" =>"https://img.macg.co/2017/12/macgpic-1513265661-29056504958379-sc-jpt.jpg"
+    ],
+
+    "ipad2" =>[
+        "name" => "ipad Galaxy",
+        "price" => 1100,
+        "discount" => 30,
+        "weight" => 500,
+        "picture" =>"https://www.presse-citron.net/app/uploads/2020/04/TEst-Magic-Keyboard-iPad-Pro-1000x600.jpg"
+    ],
+    "playstation2 "=>[
+        "name" => "ps 4",
+        "price" => 899,
+        "discount" => 30,
+        "weight" => 4000,
+        "picture" => "https://chocobonplan.com/wp-content/uploads/2020/08/ps4-pro-avec-2-jeux-offerts-predator-last-of-us-2-300x300.png"
+    ],
+
+    "iphone3" =>[
+            "name" => "Ipirateur",
+            "price" => 600,
+            "weight" => 200,
+            "picture" =>"https://www.delcourt.fr/6690-large_default/aspirateur-industriel-poussieres-toxiques-gs-2-62-h.jpg"
+    ],
+
+    "imac3" =>[
+        "name" => "PC Portable",
+        "price" => 2200,
+        "weight" => 1200,
+        "picture" =>"https://m.media-amazon.com/images/I/61aTywrhyBS._AC_SX425_.jpg"
+    ],
+
+    "ipad3" =>[
+        "name" => "Pc Fix",
+        "price" => 1500,
+        "weight" => 500,
+        "picture" =>"https://www.rueducommerce.fr/media/produits/vibox/i-28-pc-gamer-4785684-258588_8_1140x1140.jpg"
+    ],
+    "playstation3 "=>[
+        "name" => "Ninten Switch",
+        "price" => 299,
+        "weight" => 400,
+        "picture" => "https://cdn.pocket-lint.com/r/s/970x/assets/images/157862-games-review-hands-on-nintendo-switch-oled-model-review-the-switch-to-rule-them-all-image1-onw8cdg7sm.jpg"
+    ],
 
 
 ];
+
 ?>
 
 
@@ -101,18 +111,24 @@ $products =[
 </head>
 
 <body>
-<?php require_once "navbar.php" ?>
+<?php require_once "navbar.php"; ?>
 
-<div class="container-fluid col-12 d-flex">
-    <?php foreach ($products as $value =>$v2) { ?>
+<div class="container-fluid row">
+    <?php foreach ($products as $kys =>$value) { ?>
    <div class="col-3">
 
-              <h5>  Product Name:       <?= $v2["Name"]?>   </h5>
-              <img  src="               <?= $v2["picture"]?>" width="250px" height="250px">
-              <p>   price of product :  <?= $v2['price'] . " €" ?></p>
-              <p>   Product weight :    <?= $v2["weight"] ?> g</p>
-
+              <h5>  Product Name:       <?= $value["name"]?>   </h5>
+              <img  src="               <?=$value["picture"]?>" width="250px" height="250px">
+              <p> Discount € <span style="text-decoration: line-through red">150 Off</span> </p>
+              <button type="button" class="btn btn-primary"> add to Basscket</button>
+              <p>price of product with tax:     <?= formatPrice($value['price']) ?></p>
+              <p>price of product without tax:  <?= formatPrice(priceExcludingVAT($value['price']) ) ?></p>
+       <p> Discount : <?= formatPrice(discountedPrice($value['price'], $value["discount"]) ) ?></p>
+              <p>   Product weight :    <?= $value["weight"] ?> g</p>
+       <br>
+       <br>
    </div>
+
     <?php }; ?>
     <!--end of div container-fluid-->
 </div>

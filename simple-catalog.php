@@ -1,8 +1,12 @@
 <?php
 $products = ["iphone", "ipad", "imac"];
-sort($products);
-echo implode(" ", $products) ;
-echo $products[0]. " ";
-echo $products[2];
 
-print_r($products);
+for($i = 0; $i<count($products); $i++){
+   echo "this my products" . $products[$i] .;
+};
+//
+//$i = 0;
+//while ($i<count($products)){
+//    echo $products[$i] ."<br>\n";
+//    $i++;
+//};
