@@ -11,23 +11,23 @@ $products =[
 
     "imac" =>[
         "name" => "imac",
-        "price" => 2200,
-        "discount" => 30,
+        "price" => 22000,
+        "discount" => null,
         "weight" => 1200,
         "picture" =>"imgs/imac_16-9.png"
     ],
 
     "ipad" =>[
         "name" => "ipad",
-        "price" => 1800,
-        "discount" => 30,
+        "price" => 18000,
+        "discount" => 10,
         "weight" => 500,
         "picture" =>"imgs/ipad2.png"
     ],
     "playstation "=>[
         "name" => "ps 5",
-        "price" => 899,
-        "discount" => 30,
+        "price" => 80099,
+        "discount" => null,
         "weight" => 4000,
         "picture" => "imgs/ps5.jpg"
     ],
@@ -43,7 +43,7 @@ $products =[
     "imac2" =>[
         "name" => "imac Pro",
         "price" => 2200,
-        "discount" => 30,
+        "discount" => null,
         "weight" => 1200,
         "picture" =>"https://img.macg.co/2017/12/macgpic-1513265661-29056504958379-sc-jpt.jpg"
     ],
@@ -66,7 +66,7 @@ $products =[
     "iphone3" =>[
             "name" => "Ipirateur",
             "price" => 600,
-        "discount" => 30,
+        "discount" => null,
             "weight" => 200,
             "picture" =>"https://www.delcourt.fr/6690-large_default/aspirateur-industriel-poussieres-toxiques-gs-2-62-h.jpg"
     ],
@@ -89,7 +89,7 @@ $products =[
     "playstation3 "=>[
         "name" => "Ninten Switch",
         "price" => 299,
-        "discount" => 30,
+        "discount" => null,
         "weight" => 400,
         "picture" => "https://cdn.pocket-lint.com/r/s/970x/assets/images/157862-games-review-hands-on-nintendo-switch-oled-model-review-the-switch-to-rule-them-all-image1-onw8cdg7sm.jpg"
     ],
@@ -119,19 +119,38 @@ $products =[
 
 <div class="container-fluid row">
     <?php foreach ($products as $kys =>$value) { ?>
-   <div class="col-3">
+         <div class="col-3">
 
-              <h5>  Product Name:       <?= $value["name"]?>   </h5>
-              <img  src="               <?=$value["picture"]?>" width="250px" height="250px">
-              <p> Discount € <span style="text-decoration: line-through red">150 Off</span> </p>
-              <button type="button" class="btn btn-primary"> add to Basscket</button>
-              <p>price of product with tax:     <?= formatPrice($value['price']) ?></p>
-              <p>price of product without tax:  <?= formatPrice(priceExcludingVAT($value['price']) ) ?></p>
-       <p> Discount : <?= formatPrice(discountedPrice($value['price'], $value["discount"]) ) ?></p>
-              <p>   Product weight :    <?= $value["weight"] ?> g</p>
-       <br>
-       <br>
-   </div>
+            <h5>
+                Product Name: <?= $value["name"]?>
+            </h5>
+            <img  src="<?=$value["picture"]?>" width="250px" height="250px">
+
+            <h4>
+                <small> <s> 600 €</s> </small>
+            </h4>
+
+            <button type="submit" class="btn btn-primary">
+                add to cart <i class="fas fa-shopping-cart"></i>
+            </button>
+            <p class="h6 ">
+                price of product with tax:     <?php formatPrice($value['price']) ?>
+            </p>
+            <p>
+                price of product without tax:  <?php formatPrice(priceExcludingVAT($value['price']) ) ?>
+            </p>
+            <!--Condition Discount-->
+            <?php  if ($value["discount"] == null){
+                echo "<h5 class='text-danger ' >wait for sale</h5>" ;
+            } else { ?>
+                <p> Discount : <?php formatPrice(discountedPrice($value['price'], $value["discount"]) ) ?></p>
+            <?php }?>
+
+            <p>
+                Product weight :            <?= $value["weight"] ?> g</p>
+            <br>
+            <br>
+        </div>
 
     <?php }; ?>
     <!--end of div container-fluid-->

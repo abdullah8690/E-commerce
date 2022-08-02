@@ -42,8 +42,8 @@
                 </li>
             </ul>
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+
+                <a href="#" class="btn btn-outline-danger">My Cart (0)</a>
             </form>
         </div>
     </div>

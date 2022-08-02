@@ -2,7 +2,7 @@
 $products = ["iphone", "ipad", "imac"];
 
 for($i = 0; $i<count($products); $i++){
-   echo "this my products" . $products[$i] .;
+   echo "this my products" . $products[$i] ;
 };
 //
 //$i = 0;
