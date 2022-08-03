@@ -31,68 +31,68 @@ $products =[
         "weight" => 4000,
         "picture" => "imgs/ps5.jpg"
     ],
-
-    "iphone2" =>[
-        "name" => "iphone X Pro",
-        "price" => 900,
-        "discount" => 30,
-        "weight" => 200,
-        "picture" =>"https://image.made-in-china.com/155f0j00pWKRACMafbov/Original-Unlocked-A-Grade-High-Quality-Smart-Phone-New-Used-Smart-Phone-64GB-128GB-256GB-for-iPhone-X-iPhone-Xs-Xr-PRO-11.jpg"
-    ],
-
-    "imac2" =>[
-        "name" => "imac Pro",
-        "price" => 2200,
-        "discount" => null,
-        "weight" => 1200,
-        "picture" =>"https://img.macg.co/2017/12/macgpic-1513265661-29056504958379-sc-jpt.jpg"
-    ],
-
-    "ipad2" =>[
-        "name" => "ipad Galaxy",
-        "price" => 1100,
-        "discount" => 30,
-        "weight" => 500,
-        "picture" =>"https://www.presse-citron.net/app/uploads/2020/04/TEst-Magic-Keyboard-iPad-Pro-1000x600.jpg"
-    ],
-    "playstation2 "=>[
-        "name" => "ps 4",
-        "price" => 899,
-        "discount" => 30,
-        "weight" => 4000,
-        "picture" => "https://chocobonplan.com/wp-content/uploads/2020/08/ps4-pro-avec-2-jeux-offerts-predator-last-of-us-2-300x300.png"
-    ],
-
-    "iphone3" =>[
-            "name" => "Ipirateur",
-            "price" => 600,
-        "discount" => null,
-            "weight" => 200,
-            "picture" =>"https://www.delcourt.fr/6690-large_default/aspirateur-industriel-poussieres-toxiques-gs-2-62-h.jpg"
-    ],
-
-    "imac3" =>[
-        "name" => "PC Portable",
-        "price" => 2200,
-        "discount" => 30,
-        "weight" => 1200,
-        "picture" =>"https://m.media-amazon.com/images/I/61aTywrhyBS._AC_SX425_.jpg"
-    ],
-
-    "ipad3" =>[
-        "name" => "Pc Fix",
-        "price" => 1500,
-        "discount" => 30,
-        "weight" => 500,
-        "picture" =>"https://www.rueducommerce.fr/media/produits/vibox/i-28-pc-gamer-4785684-258588_8_1140x1140.jpg"
-    ],
-    "playstation3 "=>[
-        "name" => "Ninten Switch",
-        "price" => 299,
-        "discount" => null,
-        "weight" => 400,
-        "picture" => "https://cdn.pocket-lint.com/r/s/970x/assets/images/157862-games-review-hands-on-nintendo-switch-oled-model-review-the-switch-to-rule-them-all-image1-onw8cdg7sm.jpg"
-    ],
+//
+//    "iphone2" =>[
+//        "name" => "iphone X Pro",
+//        "price" => 900,
+//        "discount" => 30,
+//        "weight" => 200,
+//        "picture" =>"https://image.made-in-china.com/155f0j00pWKRACMafbov/Original-Unlocked-A-Grade-High-Quality-Smart-Phone-New-Used-Smart-Phone-64GB-128GB-256GB-for-iPhone-X-iPhone-Xs-Xr-PRO-11.jpg"
+//    ],
+//
+//    "imac2" =>[
+//        "name" => "imac Pro",
+//        "price" => 2200,
+//        "discount" => null,
+//        "weight" => 1200,
+//        "picture" =>"https://img.macg.co/2017/12/macgpic-1513265661-29056504958379-sc-jpt.jpg"
+//    ],
+//
+//    "ipad2" =>[
+//        "name" => "ipad Galaxy",
+//        "price" => 1100,
+//        "discount" => 30,
+//        "weight" => 500,
+//        "picture" =>"https://www.presse-citron.net/app/uploads/2020/04/TEst-Magic-Keyboard-iPad-Pro-1000x600.jpg"
+//    ],
+//    "playstation2 "=>[
+//        "name" => "ps 4",
+//        "price" => 899,
+//        "discount" => 30,
+//        "weight" => 4000,
+//        "picture" => "https://chocobonplan.com/wp-content/uploads/2020/08/ps4-pro-avec-2-jeux-offerts-predator-last-of-us-2-300x300.png"
+//    ],
+//
+//    "iphone3" =>[
+//            "name" => "Ipirateur",
+//            "price" => 600,
+//        "discount" => null,
+//            "weight" => 200,
+//            "picture" =>"https://www.delcourt.fr/6690-large_default/aspirateur-industriel-poussieres-toxiques-gs-2-62-h.jpg"
+//    ],
+//
+//    "imac3" =>[
+//        "name" => "PC Portable",
+//        "price" => 2200,
+//        "discount" => 30,
+//        "weight" => 1200,
+//        "picture" =>"https://m.media-amazon.com/images/I/61aTywrhyBS._AC_SX425_.jpg"
+//    ],
+//
+//    "ipad3" =>[
+//        "name" => "Pc Fix",
+//        "price" => 1500,
+//        "discount" => 30,
+//        "weight" => 500,
+//        "picture" =>"https://www.rueducommerce.fr/media/produits/vibox/i-28-pc-gamer-4785684-258588_8_1140x1140.jpg"
+//    ],
+//    "playstation3 "=>[
+//        "name" => "Ninten Switch",
+//        "price" => 299,
+//        "discount" => null,
+//        "weight" => 400,
+//        "picture" => "https://cdn.pocket-lint.com/r/s/970x/assets/images/157862-games-review-hands-on-nintendo-switch-oled-model-review-the-switch-to-rule-them-all-image1-onw8cdg7sm.jpg"
+//    ],
 
 
 ];

@@ -10,7 +10,7 @@ function priceExcludingVAT(int $priceTAX, int $tva = 20 ) :int{
 function discountedPrice($priceTAX, $discount): int
 {
 
-//   $priceTAX * ((100-$discount)/100);
+
    return (($priceTAX * 100) / (100 + $discount));
 }
 
