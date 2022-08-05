@@ -137,7 +137,7 @@ $products =[
                 price of product with tax:     <?php formatPrice($value['price']) ?>
             </p>
             <p>
-                price of product without tax:  <?php formatPrice(priceExcludingVAT($value['price']) ) ?>
+ price of product without tax:  <?php formatPrice(priceExcludingVAT($value['price']) ) ?>
             </p>
             <!--Condition Discount-->
             <?php  if ($value["discount"] == null){

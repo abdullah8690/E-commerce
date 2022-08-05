@@ -38,12 +38,13 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
+<!--                    <a class="nav-link disabled">Disabled</a>-->
+                    <h2>A & M Enterprise</h2>
                 </li>
             </ul>
             <form class="d-flex" role="search">
 
-                <a href="cart.php" class="btn btn-outline-danger">My Cart (0)</a>
+                <a href="viewCart.php" class="btn btn-outline-danger">My Cart (0)</a>
             </form>
         </div>
     </div>
