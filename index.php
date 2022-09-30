@@ -40,7 +40,7 @@ global $products;
                     <input type="hidden" name='price' value=" <?= $value["price"] ?>">
                     <input type="hidden" name='weight' value=" <?= $value["weight"] ?>">
                     <button type="submit" name="add_to_cart"
-                    " class="btn btn-info">Add To Cart</button>
+                    class="btn btn-info">Add To Cart</button>
                 </form>
             </div>
         </div>
